@@ -16,8 +16,8 @@ source:
   sha256: 9831b5b16db980e1fff370d8cc120482dd30028e72000f9904539a5b0c8a864c
 
 build:
-  number: 0
-  skip: true  # [win32]
+  noarch: generic
+  number: 1000
 
   rpaths:
     - lib/R/lib/
@@ -43,7 +43,6 @@ about:
   summary: Adds brute force and multiple starting values to nls.
   license_family: GPL2
   license_file: '{{ environ["PREFIX"] }}\/lib\/R\/share\/licenses\/GPL-2'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-2'  # [win]
 extra:
    recipe-maintainers:
     - MathiasHaudgaard
