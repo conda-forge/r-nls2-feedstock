@@ -1,4 +1,4 @@
-{% set version = '0.2' %}
+{% set version = "0.3-3" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/nls2_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/nls2/nls2_{{ version }}.tar.gz
-  sha256: 9831b5b16db980e1fff370d8cc120482dd30028e72000f9904539a5b0c8a864c
+  sha256: 74d2fa178320823b98ddb72118d968ab9852f82123ae7183bb3289775dc7b116
 
 build:
   noarch: generic
-  number: 1002
+  number: 0
 
   rpaths:
     - lib/R/lib/
@@ -41,9 +41,9 @@ about:
   license: GPL-2
   summary: Adds brute force and multiple starting values to nls.
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 extra:
-   recipe-maintainers:
+  recipe-maintainers:
     - conda-forge/r
     - MathiasHaudgaard
     - FrodePedersen
