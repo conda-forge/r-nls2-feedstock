@@ -1,11 +1,11 @@
-About r-nls2
-============
+About r-nls2-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nls2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cran.r-project.org/web/packages/nls2/index.html
 
 Package license: GPL-2
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-nls2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Adds brute force and multiple starting values to nls.
 
