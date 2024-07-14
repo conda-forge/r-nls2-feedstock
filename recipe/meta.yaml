@@ -1,4 +1,4 @@
-{% set version = "0.3-3" %}
+{% set version = "0.3-4" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/nls2_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/nls2/nls2_{{ version }}.tar.gz
-  sha256: 74d2fa178320823b98ddb72118d968ab9852f82123ae7183bb3289775dc7b116
+  sha256: c8a6f7fd12b50aa6eeb2b565f94de7aaaa59aa18eabc72c4185124a1b4399297
 
 build:
   noarch: generic
-  number: 3
+  number: 0
 
   rpaths:
     - lib/R/lib/
